@@ -1,10 +1,12 @@
 @import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"); */
 
 @custom-variant hover (&:hover);
 
-@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
-
 @layer base {
+  body {
+    background-color: rgb(106, 202, 235);
+  }
   .winky-sans {
     font-family: "Winky Sans", sans-serif;
     font-optical-sizing: auto;
@@ -13,12 +15,12 @@
   }
 
   h1 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-5xl);
     font-weight: 900;
     color: white;
   }
   h2 {
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
   }
   a {
     color: grey;
@@ -27,5 +29,21 @@
 
   a:hover {
     color: black;
+  }
+
+  button {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 5px 5px;
+  }
+
+  button:hover {
+    background-color: rgb(49, 158, 201);
+    transform: translate(5px, 5px);
+    color: white;
+    box-shadow: none;
   }
 }
