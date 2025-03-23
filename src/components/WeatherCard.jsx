@@ -20,7 +20,7 @@ const WeatherCard = ({ data, selector }) => {
   }
 
   return (
-    <div className="shadow-2xl bg-white rounded-3xl py-10 px-10 flex flex-col gap-2 justify-center text-center min-w-[50vw] self-center">
+    <div className="shadow-2xl bg-white rounded-3xl py-10 px-10 flex flex-col gap-2 justify-center text-center w-[96vw] md:max-w-[50vw] self-center">
       <div>
         <h2 className="text-center">{currCity.location.name}</h2>
         <div className="flex justify-center gap-5 text-gray-400">
